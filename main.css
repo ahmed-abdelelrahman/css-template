@@ -1,0 +1,243 @@
+:root{
+    --main-color:#deb152;
+    --secondary-color:#444;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+}
+ul{
+  list-style-type: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.header{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    
+}
+.logo{
+    flex-grow: 1;
+}
+.header ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+}
+.header ul li{
+    padding: 15px 20px;
+    overflow: hidden;
+    position: relative;
+}
+.header ul li::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+}
+.header .material-icons{
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    border: 1px solid orange ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    color: orange;
+}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section2{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+.section2 .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 15px;
+}
+.box{
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+.box span.round{
+  padding: 20px;
+  border-radius: 50%;
+  border: 7px solid #ddd;
+  margin: 15px 0;
+  color: var(--main-color);
+
+}
+.box h2{
+  font-size: 20px;
+  color: black;
+  margin: 5px auto;
+  text-align: center;
+  font-weight: normal;
+}
+.box span.text{
+  font-size: 15px;
+  color: var(--main-color);
+}
+.box p{
+font-size: 15px;
+line-height: 1.5;
+margin: 50px 0;
+}
+.box a{
+ padding: 8px 15px;
+ background-color: var(--main-color);
+ border-radius: 10px;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ 
+}
+.box a span.add{
+ color: white;
+}
+/* start section3 */
+.section3{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+.section3 .container h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+
+}
+.section3 .container p{
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.section3 .too{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.section3 .foo{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  width: 60%;
+}
+.section3 .foo .text-box{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 80% 20%;
+  gap: 10px;
+  width: 500px;
+  height: 60%;
+}
+
+.section3 .foo .text-box ul{
+  margin-left: 20px;
+}
+.section3 .foo .text-box ul li{
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  
+}
+.section3 .foo .text-box ul li span{
+  margin-right: 10px;
+  color: var(--main-color);
+}
+.section3 .foo .text-box a{
+  width: 100px ;
+  height: 30px;
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.boo{
+  border-radius: 5px;
+  text-align: center;
+}
+.boo p.tab {
+  border: 1px solid #ddd;
+  margin: 0;
+  padding: 10px;
+}
+/* end section3 */
+/* start section4 */
+.section4{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+.section4 .container .boxes{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 15px;
+}
+.section4 .container .box{
+  padding: 10px;
+}
+.section4 .container .box p{
+  font-size: small;
+}
+.section4 .container .box .image-box{
+  border-bottom: 2px solid#ddd;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.section4 .container img{
+    max-width: 100%;
+}
+/* end section4 */
